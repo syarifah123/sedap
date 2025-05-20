@@ -1,0 +1,52 @@
+/* Style untuk halaman utama */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #bfdeec; */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Judul utama */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Gaya untuk gambar */
+img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Style untuk bagian berita */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Style untuk teks berita */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Gaya untuk bagian Biodata */
+h2 {
+    color: #2980b9;
+}
+
+h4 {
+    color: #16a085;
+}
+
+/* Style untuk kontainer biodata */
+div p {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 8px;
+}
