@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Laptop Pro 15",
+    "name": "Laptop",
     "description": "Laptop Pro 15 dengan prosesor Intel Core i7, RAM 16GB, dan SSD 512GB. Cocok untuk kebutuhan profesional.",
     "price": 25000000,
     "stock": 10,
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "name": "Smartphone X",
+    "name": "Smartphone",
     "description": "Smartphone X dengan layar AMOLED 6.5 inci, kamera 108MP, dan baterai 5000mAh.",
     "price": 12000000,
     "stock": 25,
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "name": "Headphone Wireless",
+    "name": "Headphone ",
     "description": "Headphone wireless dengan kualitas suara premium dan noise cancellation.",
     "price": 3500000,
     "stock": 50,
