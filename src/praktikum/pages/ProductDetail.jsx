@@ -34,7 +34,7 @@ export default function ProductDetail() {
             />
             <h2 className="text-2xl font-bold mb-2">{product.title}</h2>
             <p className="text-gray-600 mb-1">Kategori: {product.category}</p>
-            <p className="text-gray-600 mb-1">Brand: {product.brand}</p>
+            <p className="text-gray-600 mb-1">Brands: {product.brand}</p>
             <p className="text-gray-800 font-semibold text-lg">
                 Harga: Rp {product.price * 1000}
             </p>
