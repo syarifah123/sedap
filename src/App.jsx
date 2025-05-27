@@ -1,38 +1,41 @@
 import React, { Suspense } from "react";
-import { Routes, Route } from "react-router-dom"; // Import Routes and Route
-import "./Admin/assets/tailwind.css";
-// const Dashboard = React.lazy(() => import("./Admin/pages/Dashboard"));
-// const Produk = React.lazy(() => import("./Admin/pages/Produk"));
-// const Artikel = React.lazy(() => import("./Admin/pages/Artikel"));
-// const Karyawan = React.lazy(() => import("./Admin/pages/Karyawan"));
-// const MainLayout = React.lazy(() => import("./Admin/layouts/MainLayout"));
-// const AuthLayout = React.lazy(() => import("./Admin/layouts/AuthLayout"));
-// const Login = React.lazy(() => import("./Admin/pages/auth/Login"));
-// const Register = React.lazy(() => import("./Admin/pages/auth/Register"));
-// const Forgot = React.lazy(() => import("./Admin/pages/auth/Forgot"));
-import Loading from "./Admin/components/Loading";
-// import NotFound from "./Admin/pages/NotFound";
-// import ErrorPage400 from "./Admin/pages/ErrorPage400";
-// import ErrorPage401 from "./Admin/pages/ErrorPage401";
-// import ErrorPage403 from "./Admin/pages/ErrorPage403";
-// const UserList = React.lazy(() => import("./Admin/pages/UserList"));
+import { Route, Routes } from "react-router-dom";
+import "./praktikum/assets/tailwind.css";
+// import ErrorPage400 from "./pages/ErrorPage400";
 
+import Loading from "./praktikum/components/Loading";
+const NotFound = React.lazy(() => import("./praktikum/pages/NotFound"));
+const ErrorPage403 = React.lazy(() => import("./praktikum/pages/ErrorPage403"));
+const ErrorPage401 = React.lazy(() => import("./praktikum/pages/ErrorPage401"));
+const ErrorPage400 = React.lazy(() => import("./praktikum/pages/ErrorPage400"));
+const UserList = React.lazy(() => import("./praktikum/pages/UserList"));
+const FormCustomer = React.lazy(() => import("./praktikum/pages/FormCustomer"));
+const FormOrder = React.lazy(() => import("./praktikum/pages/FormOrder"));
+const MainLayout = React.lazy(() => import("./praktikum/layouts/MainLayout"));
+const AuthLayout = React.lazy(() => import("./praktikum/layouts/AuthLayout"));
+const Login = React.lazy(() => import("./praktikum/pages/auth/Login"));
+const Register = React.lazy(() => import("./praktikum/pages/auth/Register"));
+const Forgot = React.lazy(() => import("./praktikum/pages/auth/Forgot"));
+const Orders = React.lazy(() => import("./praktikum/pages/Order"));
+const Customer = React.lazy(() => import("./praktikum/pages/Customer"));
+const Dashboard = React.lazy(() => import("./praktikum/pages/Dashboard"));
+const Products = React.lazy(() => import("./praktikum/pages/Products"));
 
-const NotFound = React.lazy(() => import("./Admin/pages/NotFound"));
-const ErrorPage403 = React.lazy(() => import("./Admin/pages/ErrorPage403"));
-const ErrorPage401 = React.lazy(() => import("./Admin/pages/ErrorPage401"));
-const ErrorPage400 = React.lazy(() => import("./Admin/pages/ErrorPage400"));
-const UserList = React.lazy(() => import("./Admin/pages/UserList"));
-const Dashboard = React.lazy(() => import("./Admin/pages/Dashboard"));
-const Produk = React.lazy(() => import("./Admin/pages/Produk"));
-const Artikel = React.lazy(() => import("./Admin/pages/Artikel"));
-const Karyawan = React.lazy(() => import("./Admin/pages/Karyawan"));
-const MainLayout = React.lazy(() => import("./Admin/layouts/MainLayout"));
-const AuthLayout = React.lazy(() => import("./Admin/layouts/AuthLayout"));
-const Login = React.lazy(() => import("./Admin/pages/auth/Login"));
-const Register = React.lazy(() => import("./Admin/pages/auth/Register"));
-const Forgot = React.lazy(() => import("./Admin/pages/auth/Forgot"));
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
 
+// import Orders from "./pages/Order";
+// import Customer from "./pages/Customer";
+
+// import Dashboard from "./pages/Dashboard";
+
+// import FormOrder from "./pages/FormOrder";
+// import MainLayout from "./layouts/MainLayout";
+// import AuthLayout from "./layouts/AuthLayout";
+// import Login from "./pages/Auth/Login";
+// import Register from "./pages/Auth/Register";
+// import Forgot from "./pages/Auth/Forgot";
+//
 
 function App() {
   return (
@@ -40,16 +43,19 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="*" element={<NotFound />} />
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/produk" element={<Produk />} />
-          <Route path="/artikel" element={<Artikel />} />
-          <Route path="/karyawan" element={<Karyawan />} />
+          <Route path="/praktikum" element={<Dashboard />} />
+          <Route path="/order" element={<Orders />} />
+          <Route path="/customer" element={<Customer />} />
+          <Route path="/FormCustomer" element={<FormCustomer />} />
+          <Route path="/FormOrder" element={<FormOrder />} />
           <Route path="/UserList" element={<UserList />} />
+          <Route path="products" element={<Products />} />
         </Route>
-        {/* Error Pages */}
+
         <Route path="/ErrorPage400" element={<ErrorPage400 />} />
         <Route path="/ErrorPage401" element={<ErrorPage401 />} />
         <Route path="/ErrorPage403" element={<ErrorPage403 />} />
+
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
