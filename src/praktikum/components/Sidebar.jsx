@@ -46,6 +46,8 @@ export default function Sidebar() {
         <ListMenu id="menu-6" to="/ErrorPage403" icon={<FaUserAlt />} label="ErrorPage403" />
         <ListMenu id="menu-7" to="/UserList" icon={<FaUserAlt />} label="List User" />
         <ListMenu id="menu-8" to="/Products" icon={<MdProductionQuantityLimits />} label="Products" />
+        <ListMenu id="menu-8" to="/Notes" icon={<MdProductionQuantityLimits />} label="Notes" />
+
 
 
       </ul>

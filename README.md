@@ -35,3 +35,7 @@ penggunaan navlinks itu juga bisa kyk di dalam folder praktikum bagian side bar 
 ## AuthLayout & MainLayout
 - Komponen `AuthLayout` → menampilkan halaman login, forgot password, reset password dll
 - Komponen  `MainLayout` → layout utama yang menampilkan sidebar, header, pages dan footer
+
+
+import { notesAPI } from "../services/notesAPI";
+      setError(`Terjadi kesalahan: ${err.message}`);
