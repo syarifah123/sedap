@@ -39,3 +39,6 @@ penggunaan navlinks itu juga bisa kyk di dalam folder praktikum bagian side bar 
 
 import { notesAPI } from "../services/notesAPI";
       setError(`Terjadi kesalahan: ${err.message}`);
+
+
+bagian NotFound di praktikum itu dashboard

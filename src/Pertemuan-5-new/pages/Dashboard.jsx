@@ -57,6 +57,7 @@ export default function Dashboard() {
             <span id="revenue-text" className="text-gray-400">Total Revenue</span>
           </div>
         </div>
+        
       </div>
     </div>
   );
